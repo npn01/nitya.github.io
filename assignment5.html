@@ -14,65 +14,60 @@
         <div class="header">
             <h1>Assignment 5: Milling Linkages</h1>
             <p>
-        <img src="joinery.jpg" width=400></a>
+        <img src="joineryc.jpg" width=400></a>
             </p>
             <p>
-            <h3>For this assignment, I created a simple piston with 3 parts & 2 fastners.</h3>  
+            <h3>For this assignment, decided to create a joint that would create a lock between 2 plates.</h3>  
             <br>
             <h4>Source Files</h4>
 <p>
-<a href="https://cad.onshape.com/documents/4ffc8c9d06d5bc4e9a68a2ea/w/2e05e5a20af95347740d0a65/e/713a61363b0818a0f1abf869">OnShape file</a>
-<p> <a href="Piston linkage.ai">AI working file</a><br> <p>
+<a href="https://cad.onshape.com/documents/3e33498d14bbf0bced4537f1/w/6eb9c3dd0ab93b9721b0d7a3/e/e7757c5f7234cf592ef02c77">OnShape file</a>
  <br> 
  <br>
  
-<h4>Inspired by</h4>
+<h4>Original file source</h4>
  <p>
-<a href="https://www.birdbraintechnologies.com/hummingbirdduo/build/piston/1-12">BirdBrain Technologies - Piston Basic Mechanism</a>
+<a href="https://www.v1engineering.com/forum/topic/cnc-joint-links/">CNC Joint Links- V1 Engineering</a>
  
     <p>
-<h4>Printer settings</h4>        
-
-Laser Printing settings: 100% power, 20% speed, 50% freq.<br> 
-           <br>                     
             </p>
 
-<p> I browsed many CAM designs, & basic mechanisms. In the end, I decided to go with a simple piston design.</p>
+<p> I browsed many CNC join designs, & found the V1 Engineering page linked above to be helpful. This page had a link to various design dxf & dwg files.</p>
 
-<p> <h4>Prototype</h4> <p>
+<p> <h4>OnShape</h4> <p>
         
-<p> I first created created a cardboard prototype by cutting out the 3 rectangles and added holes for the fastner.<p>
+<p> I imported the dxf file to OnShape and extruded it to 25mm thickness.<p>
 
-<p><img src="pistonprototype.jpg" width=400></a></p>
- 
- <p> <iframe width="560" height="315" src="https://www.youtube.com/embed/YOcAJzsriZk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <p>
-   
-<p> <h4>AI & OnShape</h4> <p>
-
-<p> I decided to create the files on AI and then imported it to OnShape in DXF format<p>   
+<p><img src="joineryb.jpg" width=400></a></p>
 	
-<p><img src="AIfile.jpg" width=400></a></p>
-
-<p> I had a hard time manipulating the imported file on OnShape, to extrude it. Finally, I was able to troubleshoot it. I used the AI file to laser cut<p>  
-
-<p><img src="OnShapemotion.jpg" width=400></a></p>
-	
-<p> <h4>Final Output</h4> <p>
+<p> <h4>Preparing file for Milling with KiCad & Bantam </h4> <p>
          
+<p> I used method 2 suggested by Joshua and used KiCad to create .grb file to import to Bantam.</p>
+
      <p>
-        <img src="final linkage.jpg" width=400></a>
+        <img src="kicada.jpg" width=400></a>
      </p>    
+
+<p> I then imported the .grb file to Bantam and ran into issues, where the size of the canvas was smaller than the file.</p>
+
+ <p> <img src="bantamfile.jpg" width=400></a> </p>  
+
+<p> I tried changing the size of the canvas, but kept getting the same error -- "Toolpaths may cause collision with frame".</p>
+
+ <p> <img src="bantam error.jpg" width=400></a> </p>  
+<p> <img src="error.jpg" width=400></a> </p>  
+
+<p> At this point I rant out of time & was unable to troubleshoot or do the milling in the lab.</p>
 
 <p> <h4>Issues encountered & lessons learnt</h4> <p>
    
-<p> If I was to do this again, I would start with OnShape. Since I was somewhat more famililar with AI vs. OnShape, I ended up going down the export/import route. While OnShape seems simpler than Rhino, I didn't find it super intuitive to use.<p>   
+<p> I was unable to scale the object/image/sketch across OnShape, KiCad or Bantam and wondered if this was even possible. Another issue was the toolpaths were causing collision which I didn't know how to troubleshoot.<p>   
     
 
 <p> <h4>Peer Attributions</h4> <p>
     
-<p> Thank you BirdBrain Technologies for the design inspiration.<p>    
-<p> Thank you Christa Keizer for your help with laser cutting the shapes + helping with the OnShape motion & fastners.<p>    
-<p> Thank you Andrew Waer for your help with troubleshooting the AI to OnShape file import workflow.<p>    
+<p> Thank you V1 engineering for the design inspiration & sharing the 3D files freely for others to use.<p>    
+<p> Thank you Joshua for showing us ways to prep the file for milling. <p>   
 	
     <p> <p>
         
